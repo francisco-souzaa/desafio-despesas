@@ -1,42 +1,33 @@
 package com.desafio.controller;
 
+import java.math.BigDecimal;
+
 public class Historico {
 	
 	private String observacoes;
-	private double saldoAtualCC;
-	private double saldoAtualCP;
-	private double saldoAnteriorCC;
-	private double saldoAnteriorCP;
 	
-	public double getSaldoAnteriorCC() {
-		return saldoAnteriorCC;
+	private BigDecimal saldoAtual;
+	
+	private BigDecimal saldoAnterior;
+
+
+	public BigDecimal getSaldoAtual() {
+		return saldoAtual;
 	}
-	public void setSaldoAnteriorCC(double saldoAnteriorCC) {
-		this.saldoAnteriorCC = saldoAnteriorCC;
+	public void setSaldoAtual(BigDecimal saldoAtual) {
+		this.saldoAtual = saldoAtual;
 	}
-	public double getSaldoAnteriorCP() {
-		return saldoAnteriorCP;
+	public BigDecimal getSaldoAnterior() {
+		return saldoAnterior;
 	}
-	public void setSaldoAnteriorCP(double saldoAnteriorCP) {
-		this.saldoAnteriorCP = saldoAnteriorCP;
+	public void setSaldoAnterior(BigDecimal saldoAnterior) {
+		this.saldoAnterior = saldoAnterior;
 	}
 	public String getObservacoes() {
 		return observacoes;
 	}
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
-	}
-	public double getSaldoAtualCC() {
-		return saldoAtualCC;
-	}
-	public void setSaldoAtualCC(double saldoAtualCC) {
-		this.saldoAtualCC = saldoAtualCC;
-	}
-	public double getSaldoAtualCP() {
-		return saldoAtualCP;
-	}
-	public void setSaldoAtualCP(double saldoAtualCP) {
-		this.saldoAtualCP = saldoAtualCP;
 	}
 
 }
